@@ -1,0 +1,323 @@
+.grid-welcome-page-container {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  gap: 1px 1px;
+  grid-template-areas: "grid-header" "grid-body";
+}
+
+.grid-home-page-traveller-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "grid-side-bar grid-home-container";
+  height: 100%;
+}
+
+.grid-side-barr {
+  grid-area: grid-side-bar;
+}
+
+
+.grid-home-container {
+  grid-area: grid-home-container;
+}
+
+.grid-body-registrar {
+  grid-area: grid-body;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 5fr 1fr;
+  grid-template-areas: " . . . . . " ". reg-form-container reg-form-container reg-form-container . " " . . . . .";
+}
+
+
+.reg-form-container{
+  grid-area: reg-form-container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . ." ". reg-phrase reg-phrase ." ". nombre-reg-c apellido-reg-c ." ". email-reg-c email-reg-c ." ". password-reg-c password-reg-c ."
+    ". fechaNac-reg-c fechaNac-reg-c ." ". genero-reg-c genero-reg-c ." ". . registro-reg-c ." ". . sicuenta-reg-c ." ". . . .";
+  align-items: center;
+}
+
+.reg-phrase{
+  grid-area: reg-phrase;
+  text-align: center;
+}
+
+.sicuenta-reg-c { 
+  grid-area: sicuenta-reg-c; 
+}
+
+.sicuenta-reg{
+  text-align: center;
+}
+
+.registro-reg-c { 
+  grid-area: registro-reg-c; 
+}
+
+.registro-reg{
+  width: 100%;
+}
+
+.genero-reg-c {
+   grid-area: genero-reg-c; 
+  }
+
+.fechaNac-reg-c {
+   grid-area: fechaNac-reg-c; 
+  }
+
+.password-reg-c {
+   grid-area: password-reg-c; 
+  }
+
+.password-reg{
+  width: 100%;
+}
+
+.email-reg-c {
+   grid-area: email-reg-c;
+  }
+
+.email-reg{
+  width:100%;
+}
+.nombre-reg-c{
+  grid-area: nombre-reg-c;
+}
+
+.nombre-reg{
+  width: 85%;
+}
+
+.apellido-reg-c {
+   grid-area: apellido-reg-c; 
+  }
+
+.apellido-reg{
+  width: 100%;
+}
+
+.grid-body-login {
+  grid-area: grid-body;
+  display: grid;
+  grid-template-columns: 2fr 7fr 1fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr 7fr 3fr 1fr;
+  grid-template-areas: ". . . . ." ". . . login-form-container ." ". login-foto . login-form-container ." ". . . login-form-container ." ". . . . .";
+}
+
+.login-form-container {
+  grid-area: login-form-container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". login-form-title login-form-title login-form-title login-form-title login-form-title ." ". user-container user-container user-container user-container user-container ." ". password-container password-container password-container password-container password-container ." ". . login-button-container login-button-container login-button-container . ." ". line-container line-container line-container line-container line-container ." ". . facebook-button-container facebook-button-container facebook-button-container . ." ". . google-button-container google-button-container google-button-container . ." ". . . . . . .";
+  align-items: center;
+  border: 1px solid black;
+}
+
+.login-form-title {
+  grid-area: login-form-title;
+}
+
+.login-form-title-text {
+  text-align: center;
+}
+
+.user-container {
+  grid-area: user-container;
+}
+
+.user-input-field {
+  width: 100%;
+}
+
+.password-container {
+  grid-area: password-container;
+}
+
+.password-input-field {
+  width: 100%;
+}
+
+.login-button-container {
+  grid-area: login-button-container;
+}
+
+.login-button {
+  width: 100%;
+}
+
+.facebook-button-container {
+  grid-area: facebook-button-container;
+}
+
+.facebook-button {
+  width: 100%;
+}
+
+.google-button-container {
+  grid-area: google-button-container;
+}
+
+.google-button {
+  width: 100%;
+}
+
+.line-container {
+  grid-area: line-container;
+}
+
+.line {
+  border: 3px solid #000000;
+  border-radius: 2px;
+}
+
+.login-foto {
+  grid-area: login-foto;
+}
+
+.grid-body {
+  grid-area: grid-body;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
+  gap:1px;
+  grid-template-areas: ". pub-tag ." ". pub-container ." ". . .";
+}
+
+.pub-tag {
+  grid-area: pub-tag;
+}
+
+.pub-container {
+  grid-area: pub-container;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 5fr 1fr;
+  grid-template-rows: 1fr 13fr 1fr;
+  gap: 1px;
+  grid-template-areas: ". . . . ." ". pub-text . pub-foto ." ". . . . .";
+}
+
+.pub-text {
+  grid-area: pub-text;
+}
+
+.pub-foto {
+  grid-area: pub-foto;
+}
+
+.grid-header {
+  grid-area : grid-header;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1px 1px;
+  grid-template-areas: "header-title-container header-auth-container";
+  align-items: center;
+  background-color: coral;
+}
+
+.header-title-container { grid-area: header-title-container; }
+
+.header-title-inside-container { width: fit-content; position: relative; left: 5%; }
+
+.h1-header { font-size: 30px; }
+
+.header-auth-container { grid-area: header-auth-container; }
+
+.header-auth-inside-container { width: fit-content; }
+
+.header-log-in-button { width: 150px; font-size: medium; margin: 5px; text-align: center;}
+
+.header-sign-up-button { width: 150px; font-size: medium; margin: 5px; text-align: center;}
+
+
+
+.modal-wrapper {
+  background: white;
+  border: 1px solid #d0cccc;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  margin: 40px auto 0;
+  transition: all .8s;
+  width: 60%;
+}
+
+.modal-popito {
+  background: grey;
+  border: 1px solid #d0cccc;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2) 0 7px 20px 0 rgba(0,0,0,0.17);
+  margin: 20px auto 0;
+  transition: all .5s;
+  width: 40%;
+}
+
+.modal-header {
+  background: coral;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 20px;
+  text-align: right;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.modal-footer {
+  height: 45px;
+  padding: 15px;
+}
+
+.close-modal-btn {
+  color: white;
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  margin: 0;
+}
+
+.close-modal-btn:hover {
+  color: black;
+}
+
+.btn-cancel, .btn-continue {
+  background: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+}
+
+.btn-cancel {
+  background-color: brown;
+  float: left;
+  position: relative;
+  top:10px;
+}
+
+.btn-continue {
+  background-color: darkcyan;
+  float: right;
+  position: relative;
+  top:10px;
+}
+
+.back-drop {
+  background-color: rgba(48, 49, 48, 0.42);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
+}
+
+.open-modal-btn {
+  margin: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
